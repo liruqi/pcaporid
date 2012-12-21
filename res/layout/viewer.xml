@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+        android:gravity="center_horizontal" 
+        android:orientation="vertical" 
+        android:id="@+id/LinearLayout01" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" android:layout_alignParentTop="true">
+		<ProgressBar android:id="@+id/Progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        
+        <EditText android:id="@+id/FilterText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NULL" />
+        <Button android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go" />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@+id/LinearLayout03" android:layout_below="@id/LinearLayout01">
+        <ListView android:id="@+id/PacketViewer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>
